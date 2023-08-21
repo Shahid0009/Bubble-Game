@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(151, 124, 206);
+}
+
+#panel {
+    width: 150vh;
+    height: 80vh;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ptop {
+    height: 80px;
+    background-color: rgb(49, 45, 75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40vh;
+}
+
+.elem {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+#pbtm {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(92, 79, 131);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.bubble:hover {
+    background-color: rgb(46, 40, 67);
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+
+    .ptop {
+        height: 80px;
+        padding: 0px 40px;
+
+    }
+
+}
